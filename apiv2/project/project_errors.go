@@ -1,13 +1,13 @@
 package project
 
 import (
-	projectapi "github.com/mittwald/goharbor-client/v3/apiv2/internal/api/client/project"
-	modelv2 "github.com/mittwald/goharbor-client/v3/apiv2/model"
+	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client/project"
+	modelv2 "github.com/donggangcj/goharbor-client/v3/apiv2/model"
 
 	"net/http"
 
 	"github.com/go-openapi/runtime"
-	"github.com/mittwald/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
 )
 
 const (

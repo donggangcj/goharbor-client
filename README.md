@@ -1,12 +1,12 @@
 # goharbor-client
-[![GitHub license](https://img.shields.io/github/license/mittwald/goharbor-client.svg?style=flat-square)](https://github.com/mittwald/goharbor-client/blob/master/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mittwald/goharbor-client?style=flat-square)](https://goreportcard.com/badge/github.com/mittwald/goharbor-client)
-[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/mittwald/goharbor-client/v3)
-[![Release](https://img.shields.io/github/release/mittwald/goharbor-client.svg?style=flat-square)](https://github.com/mittwald/goharbor-client/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/donggangcj/goharbor-client.svg?style=flat-square)](https://github.com/donggangcj/goharbor-client/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/donggangcj/goharbor-client?style=flat-square)](https://goreportcard.com/badge/github.com/donggangcj/goharbor-client)
+[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/donggangcj/goharbor-client/v3)
+[![Release](https://img.shields.io/github/release/donggangcj/goharbor-client.svg?style=flat-square)](https://github.com/donggangcj/goharbor-client/releases/latest)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a765bafaa29f6f8fdde7/maintainability)](https://codeclimate.com/github/mittwald/goharbor-client/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a765bafaa29f6f8fdde7/test_coverage)](https://codeclimate.com/github/mittwald/goharbor-client/test_coverage)
-[![Actions Status](https://github.com/mittwald/goharbor-client/workflows/Test/badge.svg)](https://github.com/mittwald/goharbor-client/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a765bafaa29f6f8fdde7/maintainability)](https://codeclimate.com/github/donggangcj/goharbor-client/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a765bafaa29f6f8fdde7/test_coverage)](https://codeclimate.com/github/donggangcj/goharbor-client/test_coverage)
+[![Actions Status](https://github.com/donggangcj/goharbor-client/workflows/Test/badge.svg)](https://github.com/donggangcj/goharbor-client/actions)
 
 A Go client library enabling programs to perform CRUD operations on the [goharbor](https://github.com/goharbor/harbor) API.
 
@@ -20,15 +20,15 @@ Install the desired client library version using `go get`:
 
 ```shell script
 # v1 Client
-go get github.com/mittwald/goharbor-client/v3/apiv1
+go get github.com/donggangcj/goharbor-client/v3/apiv1
 ```
 
 or
 
 ```shell script
 # v2 Client
-go get github.com/mittwald/goharbor-client/v3/apiv2
+go get github.com/donggangcj/goharbor-client/v3/apiv2
 ```
 
 ## Documentation
-For more specific documentation, please refer to the [godoc](https://pkg.go.dev/github.com/mittwald/goharbor-client/v3) of this library.
+For more specific documentation, please refer to the [godoc](https://pkg.go.dev/github.com/donggangcj/goharbor-client/v3) of this library.

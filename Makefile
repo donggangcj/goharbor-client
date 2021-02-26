@@ -42,11 +42,11 @@ mock-cleanup:
 
 # Integration testing on Harbor v1
 integration-test-v1: harbor-v1
-	CGO_ENABLED=0 go test -p 1 -count 1 -v github.com/mittwald/goharbor-client/v3/apiv1/... -tags integration
+	CGO_ENABLED=0 go test -p 1 -count 1 -v github.com/donggangcj/goharbor-client/v3/apiv1/... -tags integration
 
 # Integration testing on Harbor v2
 integration-test-v2: harbor-v2
-	CGO_ENABLED=0 go test -p 1 -count 1 -v github.com/mittwald/goharbor-client/v3/apiv2/... -tags integration
+	CGO_ENABLED=0 go test -p 1 -count 1 -v github.com/donggangcj/goharbor-client/v3/apiv2/... -tags integration
 
 # Exclude auto-generated code to be formatted by gofmt
 gofmt:
