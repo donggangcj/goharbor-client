@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-openapi/runtime"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 )
 
 const (
@@ -12,8 +12,8 @@ const (
 	ErrRegistryIllegalIDFormatMsg = "illegal format of provided ID value"
 	// ErrRegistryUnauthorized describes an unauthorized request
 	ErrRegistryUnauthorizedMsg = "unauthorized"
-	// ErrRegistryInternalErrors describes server-side internal errors
-	ErrRegistryInternalErrorsMsg = "unexpected internal errors"
+	// ErrRegistryInternalErrors describes server-side generate errors
+	ErrRegistryInternalErrorsMsg = "unexpected generate errors"
 	// ErrRegistryNoPermission describes a request error without permission
 	ErrRegistryNoPermissionMsg = "user does not have permission to the registry"
 	// ErrRegistryIDNotExists describes an error
@@ -48,7 +48,7 @@ func (e *ErrRegistryUnauthorized) Error() string {
 	return ErrRegistryUnauthorizedMsg
 }
 
-// ErrRegistryInternalErrors describes server-side internal errors.
+// ErrRegistryInternalErrors describes server-side generate errors.
 type ErrRegistryInternalErrors struct{}
 
 // Error returns the error message.

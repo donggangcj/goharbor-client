@@ -7,13 +7,13 @@ import (
 	"net/url"
 	"testing"
 
-	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client"
+	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client"
 	integrationtest "github.com/donggangcj/goharbor-client/v3/apiv2/testing"
 
 	runtimeclient "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client"
 	model "github.com/donggangcj/goharbor-client/v3/apiv2/model/legacy"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

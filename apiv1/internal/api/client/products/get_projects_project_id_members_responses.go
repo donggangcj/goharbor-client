@@ -185,7 +185,7 @@ func NewGetProjectsProjectIDMembersInternalServerError() *GetProjectsProjectIDMe
 
 /* GetProjectsProjectIDMembersInternalServerError describes a response with status code 500, with default header values.
 
-Unexpected internal errors.
+Unexpected generate errors.
 */
 type GetProjectsProjectIDMembersInternalServerError struct {
 }

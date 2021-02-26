@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-openapi/runtime"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 )
 
 const (
@@ -14,8 +14,8 @@ const (
 	// ErrReplicationUnauthorized describes an unauthorized request
 	ErrReplicationUnauthorizedMsg = "unauthorized"
 
-	// ErrReplicationInternalErrors describes server-side internal errors
-	ErrReplicationInternalErrorsMsg = "unexpected internal errors"
+	// ErrReplicationInternalErrors describes server-side generate errors
+	ErrReplicationInternalErrorsMsg = "unexpected generate errors"
 
 	// ErrReplicationNoPermission describes a request error without permission
 	ErrReplicationNoPermissionMsg = "user does not have permission to the replication"
@@ -64,7 +64,7 @@ func (e *ErrReplicationUnauthorized) Error() string {
 	return ErrReplicationUnauthorizedMsg
 }
 
-// ErrReplicationInternalErrors describes server-side internal errors.
+// ErrReplicationInternalErrors describes server-side generate errors.
 type ErrReplicationInternalErrors struct{}
 
 // Error returns the error message.

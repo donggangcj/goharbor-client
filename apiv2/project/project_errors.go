@@ -1,13 +1,13 @@
 package project
 
 import (
-	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client/project"
+	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client/project"
 	modelv2 "github.com/donggangcj/goharbor-client/v3/apiv2/model"
 
 	"net/http"
 
 	"github.com/go-openapi/runtime"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 )
 
 const (
@@ -18,7 +18,7 @@ const (
 	ErrProjectUnauthorizedMsg = "unauthorized"
 
 	// ErrProjectInternalErrorsMsg is the error message for ErrProjectInternalErrors error.
-	ErrProjectInternalErrorsMsg = "unexpected internal errors"
+	ErrProjectInternalErrorsMsg = "unexpected generate errors"
 
 	// ErrProjectNoPermissionMsg is the error message for ErrProjectNoPermission error.
 	ErrProjectNoPermissionMsg = "user does not have permission to the project"
@@ -93,7 +93,7 @@ func (e *ErrProjectUnauthorized) Error() string {
 	return ErrProjectUnauthorizedMsg
 }
 
-// ErrProjectInternalErrors describes server-side internal errors.
+// ErrProjectInternalErrors describes server-side generate errors.
 type ErrProjectInternalErrors struct{}
 
 // Error returns the error message.

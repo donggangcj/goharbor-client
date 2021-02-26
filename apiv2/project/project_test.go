@@ -8,15 +8,15 @@ import (
 	"net/http"
 	"testing"
 
-	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client/project"
+	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client/project"
 	modelv2 "github.com/donggangcj/goharbor-client/v3/apiv2/model"
 
 	"github.com/go-openapi/runtime"
-	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client"
+	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client"
 
 	runtimeclient "github.com/go-openapi/runtime/client"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 	"github.com/donggangcj/goharbor-client/v3/apiv2/mocks"
 	model "github.com/donggangcj/goharbor-client/v3/apiv2/model/legacy"
 	"github.com/stretchr/testify/assert"

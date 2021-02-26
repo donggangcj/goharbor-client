@@ -9,8 +9,8 @@ import (
 	"github.com/donggangcj/goharbor-client/v3/apiv2/quota"
 	"github.com/donggangcj/goharbor-client/v3/apiv2/retention"
 
-	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client"
+	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client"
 	"github.com/go-openapi/runtime"
 	runtimeclient "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"

@@ -173,7 +173,7 @@ func NewPostProjectsInternalServerError() *PostProjectsInternalServerError {
 
 /* PostProjectsInternalServerError describes a response with status code 500, with default header values.
 
-Unexpected internal errors.
+Unexpected generate errors.
 */
 type PostProjectsInternalServerError struct {
 }

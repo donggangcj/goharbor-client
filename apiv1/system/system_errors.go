@@ -17,8 +17,8 @@ const (
 	// ErrSystemUnauthorizedMsg describes an unauthorized request
 	ErrSystemUnauthorizedMsg = "unauthorized"
 
-	// ErrSystemInternalErrorsMsg describes server-side internal errors
-	ErrSystemInternalErrorsMsg = "unexpected internal errors"
+	// ErrSystemInternalErrorsMsg describes server-side generate errors
+	ErrSystemInternalErrorsMsg = "unexpected generate errors"
 
 	// ErrSystemNoPermissionMsg describes a request error without permission
 	ErrSystemNoPermissionMsg = "user does not have permission to the System"
@@ -57,7 +57,7 @@ func (e *ErrSystemUnauthorized) Error() string {
 	return ErrSystemUnauthorizedMsg
 }
 
-// ErrSystemInternalErrors describes server-side internal errors.
+// ErrSystemInternalErrors describes server-side generate errors.
 type ErrSystemInternalErrors struct{}
 
 // Error returns the error message.

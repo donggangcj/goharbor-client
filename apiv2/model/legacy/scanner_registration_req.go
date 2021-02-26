@@ -46,7 +46,7 @@ type ScannerRegistrationReq struct {
 	// Example: http://harbor-scanner-clair:8080
 	URL string `json:"url,omitempty"`
 
-	// Indicate whether use internal registry addr for the scanner to pull content or not
+	// Indicate whether use generate registry addr for the scanner to pull content or not
 	UseInternalAddr *bool `json:"use_internal_addr,omitempty"`
 }
 

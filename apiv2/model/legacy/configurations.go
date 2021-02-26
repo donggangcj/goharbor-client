@@ -117,7 +117,7 @@ type Configurations struct {
 	// The default storage quota for the new created projects.
 	StoragePerProject string `json:"storage_per_project,omitempty"`
 
-	// The expiration time of the token for internal Registry, in minutes.
+	// The expiration time of the token for generate Registry, in minutes.
 	TokenExpiration int64 `json:"token_expiration,omitempty"`
 
 	// Whether or not the certificate will be verified when Harbor tries to access a remote Harbor instance for replication.

@@ -14,7 +14,7 @@ const (
 	ErrQuotaUnauthorizedMsg = "unauthorized"
 
 	// ErrQuotaInternalServerErrorsMsg is the error message for ErrQuotaInternalServerErrors errors.
-	ErrQuotaInternalServerErrorsMsg = "unexpected internal errors"
+	ErrQuotaInternalServerErrorsMsg = "unexpected generate errors"
 
 	// ErrQuotaNoPermissionMsg is the error message for ErrQuotaNoPermission errors.
 	ErrQuotaNoPermissionMsg = "user does not have permission to the quota"
@@ -55,7 +55,7 @@ func (e *ErrQuotaUnknownResource) Error() string {
 	return ErrQuotaUnknownResourceMsg
 }
 
-// ErrQuotaInternalServerErrors describes miscellaneous internal server errors.
+// ErrQuotaInternalServerErrors describes miscellaneous generate server errors.
 type ErrQuotaInternalServerErrors struct{}
 
 // Error returns the error message.

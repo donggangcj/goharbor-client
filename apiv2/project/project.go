@@ -4,16 +4,16 @@ import (
 	"context"
 	"errors"
 
-	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client/project"
+	projectapi "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client/project"
 
 	modelv2 "github.com/donggangcj/goharbor-client/v3/apiv2/model"
 	uc "github.com/donggangcj/goharbor-client/v3/apiv2/user"
 
-	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client"
+	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client"
 
 	"github.com/go-openapi/runtime"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 	model "github.com/donggangcj/goharbor-client/v3/apiv2/model/legacy"
 )
 

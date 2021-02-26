@@ -44,7 +44,7 @@ func (m InternalChartAPIError) MarshalJSON() ([]byte, error) {
 	return swag.ConcatJSON(_parts...), nil
 }
 
-// Validate validates this internal chart API error
+// Validate validates this generate chart API error
 func (m *InternalChartAPIError) Validate(formats strfmt.Registry) error {
 	var res []error
 
@@ -59,7 +59,7 @@ func (m *InternalChartAPIError) Validate(formats strfmt.Registry) error {
 	return nil
 }
 
-// ContextValidate validate this internal chart API error based on the context it is used
+// ContextValidate validate this generate chart API error based on the context it is used
 func (m *InternalChartAPIError) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
 	var res []error
 

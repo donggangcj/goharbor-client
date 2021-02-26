@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"testing"
 
-	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/internal/api/client"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	v2client "github.com/donggangcj/goharbor-client/v3/apiv2/generate/api/client"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 	"github.com/donggangcj/goharbor-client/v3/apiv2/mocks"
 	model "github.com/donggangcj/goharbor-client/v3/apiv2/model/legacy"
 

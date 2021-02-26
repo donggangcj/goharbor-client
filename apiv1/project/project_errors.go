@@ -15,7 +15,7 @@ const (
 	ErrProjectUnauthorizedMsg = "unauthorized"
 
 	// ErrProjectInternalErrorsMsg is the error message for ErrProjectInternalErrors error.
-	ErrProjectInternalErrorsMsg = "unexpected internal errors"
+	ErrProjectInternalErrorsMsg = "unexpected generate errors"
 
 	// ErrProjectNoPermissionMsg is the error message for ErrProjectNoPermission error.
 	ErrProjectNoPermissionMsg = "user does not have permission to the project"
@@ -84,7 +84,7 @@ func (e *ErrProjectUnauthorized) Error() string {
 	return ErrProjectUnauthorizedMsg
 }
 
-// ErrProjectInternalErrors describes server-side internal errors.
+// ErrProjectInternalErrors describes server-side generate errors.
 type ErrProjectInternalErrors struct{}
 
 // Error returns the error message.

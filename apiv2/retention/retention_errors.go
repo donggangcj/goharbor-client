@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-openapi/runtime"
-	"github.com/donggangcj/goharbor-client/v3/apiv2/internal/legacyapi/client/products"
+	"github.com/donggangcj/goharbor-client/v3/apiv2/generate/legacyapi/client/products"
 )
 
 const (
@@ -15,7 +15,7 @@ const (
 	ErrRetentionNoPermissionMsg = "user does not have permission to the retention"
 
 	// ErrRetentionInternalErrorsMsg is the error message for ErrRetentionInternalErrors error.
-	ErrRetentionInternalErrorsMsg = "unexpected internal errors"
+	ErrRetentionInternalErrorsMsg = "unexpected generate errors"
 
 	// ErrRetentionDoesNotExistMsg is the error message for ErrRetentionDoesNotExist error.
 	ErrRetentionDoesNotExistMsg = "retention policy does not exist"
@@ -56,7 +56,7 @@ func (e *ErrRetentionDoesNotExist) Error() string {
 	return ErrRetentionDoesNotExistMsg
 }
 
-// ErrRetentionInternalErrors describes server-side internal errors.
+// ErrRetentionInternalErrors describes server-side generate errors.
 type ErrRetentionInternalErrors struct{}
 
 // Error returns the error message.
