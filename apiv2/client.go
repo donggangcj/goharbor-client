@@ -43,6 +43,8 @@ type RESTClient struct {
 	system      *system.RESTClient
 	retention   *retention.RESTClient
 	quota       *quota.RESTClient
+	// The new client of the harbor v2 API
+	V2Client *v2client.Harbor
 }
 
 // NewRESTClient constructs a new REST client containing each sub client.
@@ -55,6 +57,7 @@ func NewRESTClient(legacyClient *client.Harbor, v2Client *v2client.Harbor, authI
 		system:      system.NewClient(legacyClient, v2Client, authInfo),
 		retention:   retention.NewClient(legacyClient, v2Client, authInfo),
 		quota:       quota.NewClient(legacyClient, v2Client, authInfo),
+		V2Client:    v2Client,
 	}
 }
 
