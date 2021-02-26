@@ -45,6 +45,8 @@ type RESTClient struct {
 	quota       *quota.RESTClient
 	// The new client of the harbor v2 API
 	V2Client *v2client.Harbor
+	// AuthInfo contains the auth information that is provided on API calls.
+	AuthInfo runtime.ClientAuthInfoWriter
 }
 
 // NewRESTClient constructs a new REST client containing each sub client.
@@ -58,6 +60,7 @@ func NewRESTClient(legacyClient *client.Harbor, v2Client *v2client.Harbor, authI
 		retention:   retention.NewClient(legacyClient, v2Client, authInfo),
 		quota:       quota.NewClient(legacyClient, v2Client, authInfo),
 		V2Client:    v2Client,
+		AuthInfo:    authInfo,
 	}
 }
 
